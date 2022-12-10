@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  appearance: none;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1rem;
+}
+
+input[type="text"]:invalid {
+  border-color: #f00;
+}
+
+input[type="text"]:valid {
+  border-color: #ccc;
+}
+
+input[type="text"]:placeholder-shown {
+  border-color: #ccc;
+}
+
+input[type="email"]:invalid {
+  border-color: #f00;
+}
+
+input[type="email"]:valid {
+  border-color: #ccc;
+}
+
+input[type="email"]:placeholder-shown {
+  border-color: #ccc;
+}
+
+button {
+  appearance: none;
+  background-color: inherit;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button:active {
+  background-color: inherit;
+  outline: 2px solid #000;
+}
+
+:where(input, button):focus-visible {
+  outline: 2px solid #999;
+  outline-offset: 2px;
+}
